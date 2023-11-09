@@ -15,10 +15,9 @@ const mongoose = require("mongoose");
 
 
 //starts the server to start accpeting html requests
-app.listen(process.env.PORT, () => {
-    console.log("\nReady to accept requests in " + process.env.PORT);
+app.listen(6000, () => {
+    console.log("\nReady to accept requests in 6000");
 })
-
 
 
 //connect to mongoose database
@@ -31,10 +30,8 @@ mongoose.connect(process.env.MONGODB_URL)
 })
 
 
-
 //allows handling of JSON
 app.use(express.json());
-
 
 //middleware for products
 app.use('/api/products', product_router);
