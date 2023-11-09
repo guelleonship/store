@@ -15,8 +15,8 @@ const mongoose = require("mongoose");
 
 
 //starts the server to start accpeting html requests
-app.listen(6000, () => {
-    console.log("\nReady to accept requests in 6000");
+app.listen(3000, () => {
+    console.log("\nReady to accept requests in 3000");
 })
 
 
